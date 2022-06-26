@@ -2,15 +2,41 @@
 
 <head>
     <title>Pacmen</title>
+
+<style>
+    .container {
+        padding:55px;
+    }
+
+    .button_1 {
+        background-color: #ffff00; 
+        padding:20px;
+    }
+
+    .button_2 {
+        background-color: #009933; 
+        padding:20px; 
+        color: white;
+    }
+
+    .center {
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+
+    }
+</style>
+
 </head>
-
 <body>
-    <div id='game'>
-        <button onclick='makeOne()' width='200' height='30'>Add PacMan</button>
-        <button onclick='update()' width='200' height='30'>Start Game</button>
+    <div id='game' class="container">
+        <div class="center">
+            <button class="button_1" onclick='makeOne()' width='200' height='30'>Add PacMan</button>
+            <button class="button_2" onclick='update()' width='200' height='30'>Start Movement</button>
+        </div>   
     </div>
-
-    <!-- DO NOT CHANGE THIS LINE OF CODE -->
     <script src="./pacmen.js"></script>
 </body>
 
